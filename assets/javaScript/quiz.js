@@ -2,29 +2,34 @@ document.addEventListener("DOMContentLoaded", function(){
     loadQuestion(question1)
     let buttons = document.getElementsByClassName('questionButton');
 
-    // for (let button of buttons) {
-    //     button.addEventListener("click", function() {
-    //         if (this.getAttribute("data-type") === "btn1") {
-    //             alert('btn1');
-    //         } else if (this.getAttribute("data-type") === "btn2") {
-    //             alert('btn2');
-    //         } else if (this.getAttribute("data-type") === "btn3") {
-    //             alert('btn3');
-    //         }else if (this.getAttribute("data-type") === "btn4") {
-    //             alert('btn4');
-    //         }
-    //     });
-    // }})
-})
+    for (let button of buttons) {
+        button.addEventListener("click", function() {
+            if (this.getAttribute("data-type") === "btn1") {
+                alert('btn1');
+            } else if (this.getAttribute("data-type") === "btn2") {
+                alert('btn2');
+            } else if (this.getAttribute("data-type") === "btn3") {
+                alert('btn3');
+            }else if (this.getAttribute("data-type") === "btn4") {
+                alert('btn4');
+            }
+        });
+    }})
 
 
+/**
+ * 
+ * loads the question from an array and populates the
+ * answer buttons. Takes questions in the following format 
+ * question = [question, answer1, answer2, answer3, answer4, correctAnswerIndex]
+ */
 function loadQuestion(question){
     let buttons = document.getElementsByClassName('questionButton');
     document.getElementById('question').textContent = question[0];
     let btnIndex = 1
     for (let button of buttons){
         button.textContent = question[btnIndex];
-        btnIndex = btnIndex+1;
+        btnIndex = btnIndex
     }
 }
 
