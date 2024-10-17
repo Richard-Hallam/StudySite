@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,44 +9,43 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Study Site</a>
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Notes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Flashcards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Excercises</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <head>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Study Site</a>
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Notes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Flashcards</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Excercises</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </head>
     <main>
         <div>
             <h1 id="Question">Question Text</h1>
             <div>
-                <button class="questionButton" id="option1">.</button>
-                <button class="questionButton" id="option2">.</button>
-                <button class="questionButton" id="option3">.</button>
-                <button class="questionButton" id="option4">.</button>
+                <button class="questionButton" data-type="btn1" id="optionBtn1">.</button>
+                <button class="questionButton" data-type="btn2" id="optionBtn2">.</button>
+                <button class="questionButton" data-type="btn3" id="optionBtn3">.</button>
+                <button class="questionButton" data-type="btn4" id="optionBtn4">.</button>
             </div>
         </div>
     </main>
-    <footer></footer>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+
+    <script src="assets\javaScript\quiz.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
-    <script href="/assets/javaScript/quiz.js"></script>
+    
 </body>
-
 </html>
+
