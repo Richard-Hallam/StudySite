@@ -61,7 +61,7 @@ function checkAnswer(question, answerIndex) {
         alert('Correct');
         console.log(2);
     } else {
-        alert(`Wrong. The correct answer is ${question[answerIndex]}`)
+        alert(`Wrong. The correct answer is ${question[question[5]]}`)
         console.log(3);
     }
 }
